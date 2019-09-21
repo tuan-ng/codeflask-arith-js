@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ed367a8d4d3b55cad79625921c2abf9",
+    "revision": "ef170bb90ba53f84a853b222123801b7",
     "url": "/codeflask-arith-js/index.html"
   },
   {
-    "revision": "2bec633a21967f8ee542",
+    "revision": "3f2b23419c3115da819d",
     "url": "/codeflask-arith-js/static/css/main.81684183.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/codeflask-arith-js/static/js/2.72354540.chunk.js"
   },
   {
-    "revision": "2bec633a21967f8ee542",
-    "url": "/codeflask-arith-js/static/js/main.98dfb7d0.chunk.js"
+    "revision": "3f2b23419c3115da819d",
+    "url": "/codeflask-arith-js/static/js/main.2b036d92.chunk.js"
   },
   {
     "revision": "ea2c2bf0077345653de6",
