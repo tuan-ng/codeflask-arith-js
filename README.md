@@ -1,6 +1,6 @@
 # CODEFLASK-ARITH-JS
 
-This post creates a React app using **create-react-app**, 
+This post shows a React app using **create-react-app**, 
 **hooks**, **styled-components**, **CodeFlask** and 
 [arith-js](https://github.com/tuan-ng/arith-js). It 
 illustrates the working of an interpreter and a 
@@ -17,7 +17,7 @@ provides a check that makes it possible to isolate
 post for **CodeFlask**. 
 
 
-Some screenshots is shown below. To play live with the 
+Some screenshots are shown below. To play live with the 
 app, go [here](https://tuan-ng.github.io/codeflask-arith-js/)! 
 
 ![fullscreen](/images/full.png)
