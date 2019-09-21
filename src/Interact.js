@@ -107,12 +107,10 @@ const Interact = () => {
       });
       exprEl.current.updateLanguage('arithjs');
 
-
       evalEl.current = new CodeFlask('#eval', { 
         language: 'js', 
         readonly: true
       });
-
 
       compEl.current = new CodeFlask('#comp', { 
         language: 'js', 
@@ -128,10 +126,9 @@ const Interact = () => {
     const code = exprEl.current.getCode().trim();
     if (!code) return;
     const parsedCode = parse(tokenize(code));
-    evalEl.current.updateCode(`${interpret(parsedCode)}`);  // converts to a string
+    evalEl.current.updateCode(`${interpret(parsedCode)}`);  // to a string
     compEl.current.updateCode(compile(parsedCode));
   }
-
 
   return (
     <StyledInteract>
