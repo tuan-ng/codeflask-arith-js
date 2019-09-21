@@ -128,7 +128,6 @@ const Interact = () => {
     const code = exprEl.current.getCode().trim();
     if (!code) return;
     const parsedCode = parse(tokenize(code));
-    console.log(parsedCode);
     evalEl.current.updateCode(`${interpret(parsedCode)}`);  // converts to a string
     compEl.current.updateCode(compile(parsedCode));
   }
