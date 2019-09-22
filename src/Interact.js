@@ -1,15 +1,15 @@
-import React, { useRef, useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useRef, useState, useEffect } from "react";
+import styled from "styled-components";
 
-import CodeFlask from 'codeflask';
-import { tokenize, parse, interpret, compile } from './arith/arith';
+import CodeFlask from "codeflask";
+import { tokenize, parse, interpret, compile } from "./arith/arith";
 
 const StyledInteract = styled.div`
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 662px;
-  
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
     width: 100%;
@@ -80,12 +80,8 @@ const Button = styled.button`
 `;
 
 const Editor = ({ id, height }) => {
-  return (
-    <StyledEditor id={id} height={height} >
-    </StyledEditor>
-  );
-}
-
+  return <StyledEditor id={id} height={height}></StyledEditor>;
+};
 
 const Interact = () => {
   const exprEl = useRef(null);
@@ -95,44 +91,41 @@ const Interact = () => {
   const [hasEditors, setHasEditors] = useState(false);
 
   useEffect(() => {
-    if (!hasEditors) { 
-
-      exprEl.current = new CodeFlask('#expr', { 
-        language: 'js' 
+    if (!hasEditors) {
+      exprEl.current = new CodeFlask("#expr", {
+        language: "js"
       });
-      exprEl.current.addLanguage('arithjs', {
-        'number': /[0-9]+/,
-        'operator': /[*-+/]/,
-        'punctuation': /[()]/
+      exprEl.current.addLanguage("arithjs", {
+        number: /[0-9]+/,
+        operator: /[*-+/]/,
+        punctuation: /[()]/
       });
-      exprEl.current.updateLanguage('arithjs');
+      exprEl.current.updateLanguage("arithjs");
 
-      evalEl.current = new CodeFlask('#eval', { 
-        language: 'js', 
+      evalEl.current = new CodeFlask("#eval", {
+        language: "js",
         readonly: true
       });
 
-      compEl.current = new CodeFlask('#comp', { 
-        language: 'js', 
+      compEl.current = new CodeFlask("#comp", {
+        language: "js",
         readonly: true
       });
 
       setHasEditors(true);
     }
-
   }, [hasEditors]);
 
   const runClick = () => {
     const code = exprEl.current.getCode().trim();
     if (!code) return;
     const parsedCode = parse(tokenize(code));
-    evalEl.current.updateCode(`${interpret(parsedCode)}`);  // to a string
+    evalEl.current.updateCode(`${interpret(parsedCode)}`); // to a string
     compEl.current.updateCode(compile(parsedCode));
-  }
+  };
 
   return (
     <StyledInteract>
-
       <StyledExpr>
         <Header> an arith-js expression </Header>
         <Editor id="expr" height="70%" />
@@ -142,15 +135,14 @@ const Interact = () => {
       <StyledDisplay>
         <StyledShow>
           <Header> evaluated value </Header>
-          <Editor id="eval"  />
+          <Editor id="eval" />
         </StyledShow>
-        
+
         <StyledShow>
           <Header> compiled js expression </Header>
-          <Editor id="comp"  />
+          <Editor id="comp" />
         </StyledShow>
       </StyledDisplay>
-
     </StyledInteract>
   );
 };

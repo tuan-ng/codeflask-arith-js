@@ -5,19 +5,17 @@
 }
 
 html {
-  --color-blue: #537BFF;
-  --color-gray: #5A5A5A;
-  --color-gray-light: #F2F2F2;
+  --color-blue: #537bff;
+  --color-gray: #5a5a5a;
+  --color-gray-light: #f2f2f2;
 
   font-size: 10px;
 }
 
-
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: lighter;
   color: var(--color-gray);
 }
-

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import Interact from './Interact';
+import Interact from "./Interact";
 
 const StyledApp = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ function App() {
   return (
     <StyledApp>
       <Header> ARITH-JS </Header>
-      <Interact /> 
+      <Interact />
     </StyledApp>
   );
 }
