@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/codeflask-arith-js/static/css/main.81684183.chunk.css",
-    "main.js": "/codeflask-arith-js/static/js/main.2b036d92.chunk.js",
-    "main.js.map": "/codeflask-arith-js/static/js/main.2b036d92.chunk.js.map",
+    "main.css": "/codeflask-arith-js/static/css/main.e2a23b52.chunk.css",
+    "main.js": "/codeflask-arith-js/static/js/main.4295ef32.chunk.js",
+    "main.js.map": "/codeflask-arith-js/static/js/main.4295ef32.chunk.js.map",
     "runtime-main.js": "/codeflask-arith-js/static/js/runtime-main.9428ffab.js",
     "runtime-main.js.map": "/codeflask-arith-js/static/js/runtime-main.9428ffab.js.map",
     "static/js/2.72354540.chunk.js": "/codeflask-arith-js/static/js/2.72354540.chunk.js",
     "static/js/2.72354540.chunk.js.map": "/codeflask-arith-js/static/js/2.72354540.chunk.js.map",
     "index.html": "/codeflask-arith-js/index.html",
-    "precache-manifest.9cc2a5255b7c2e94ccbd0b6d6a9028cf.js": "/codeflask-arith-js/precache-manifest.9cc2a5255b7c2e94ccbd0b6d6a9028cf.js",
+    "precache-manifest.b2df75816c5fd9fcedf9765495ffee2b.js": "/codeflask-arith-js/precache-manifest.b2df75816c5fd9fcedf9765495ffee2b.js",
     "service-worker.js": "/codeflask-arith-js/service-worker.js",
-    "static/css/main.81684183.chunk.css.map": "/codeflask-arith-js/static/css/main.81684183.chunk.css.map"
+    "static/css/main.e2a23b52.chunk.css.map": "/codeflask-arith-js/static/css/main.e2a23b52.chunk.css.map"
   }
 }

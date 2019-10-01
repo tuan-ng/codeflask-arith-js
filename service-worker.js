@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/codeflask-arith-js/precache-manifest.9cc2a5255b7c2e94ccbd0b6d6a9028cf.js"
+  "/codeflask-arith-js/precache-manifest.b2df75816c5fd9fcedf9765495ffee2b.js"
 );
 
 self.addEventListener('message', (event) => {
