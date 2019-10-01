@@ -1,10 +1,9 @@
 // An interpreter and a compiler for an arithmetic
-// language. See README for more detail.
+// language.
 
 const tokenize = s =>
   s
-    .replace(/\(/g, " ( ")
-    .replace(/\)/g, " ) ")
+    .replace(/([()])/g, " $1 ")
     .trim()
     .split(/\s+/);
 
@@ -14,7 +13,7 @@ const parse = tokens => {
   const consume = () => tokens[i++];
 
   const parseAtom = () =>
-    /^[+*-/]$/.test(peek()) ? consume() : parseInt(consume());
+    /^[+*/-]$/.test(peek()) ? consume() : Number(consume());
 
   const parseCompound = () => {
     consume();
